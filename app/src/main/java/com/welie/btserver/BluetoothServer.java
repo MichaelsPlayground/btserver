@@ -182,7 +182,7 @@ class BluetoothServer {
 
 
     BluetoothServer(Context context) {
-        Timber.plant(new Timber.DebugTree());
+        //Timber.plant(new Timber.DebugTree());
 
         final BluetoothManager bluetoothManager = (BluetoothManager) context.getSystemService(Context.BLUETOOTH_SERVICE);
         if (bluetoothManager == null) {
