@@ -84,7 +84,7 @@ class CurrentTimeService extends BaseService {
 
     private void notifyCurrentTime() {
         notifyCharacteristicChanged(getCurrentTime() ,currentTime);
-        handler.postDelayed(notifyRunnable, 1000);
+        handler.postDelayed(notifyRunnable, 1000); // 1000 ms = 1 second
     }
 
     private void stopNotifying() {
